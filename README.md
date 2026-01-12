@@ -1,3 +1,4 @@
 # iskinner-code.github.io
 
-I am editing the desktop file as a test
+
+I am Ian Skinner and this is my ITSIS 3135 Github Page!
