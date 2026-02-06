@@ -1,22 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 body {
   background-color: #004385;
   color: white;
+  font-family: "Inter", sans-serif;
 }
 
 header {
   background-color: #031a6b;
   padding: 10px;
   border-radius: 20px;
-  margin: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
   color: white;
-}
-
-main {
-  background-color: #03294e;
-  margin: 15px;
-  border-radius: 20px;
-  padding: 10px;
-  text-align: left;
 }
 
 h1,
@@ -26,13 +21,24 @@ h4,
 h5,
 h6 {
   color: #eaebed;
+  font-family: "Playfair Display", serif;
+}
+
+main {
+  background-color: #03294e;
+  padding: 10px;
+  border-radius: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 footer {
   background-color: #031a6b;
   padding: 10px;
   border-radius: 20px;
-  margin: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
   color: white;
 }
 
@@ -43,11 +49,7 @@ a {
 }
 
 p {
-  line-height: 1.6;
-}
-
-#page {
-  text-decoration: underline;
+  line-height: 1.5;
 }
 
 img {
