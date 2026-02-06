@@ -1,0 +1,55 @@
+body {
+  background-color: #004385;
+  color: white;
+}
+
+header {
+  background-color: #031a6b;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 15px;
+  color: white;
+}
+
+main {
+  background-color: #03294e;
+  margin: 15px;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #eaebed;
+}
+
+footer {
+  background-color: #031a6b;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 15px;
+  color: white;
+}
+
+a {
+  color: #76e5fc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+p {
+  line-height: 1.6;
+}
+
+#page {
+  text-decoration: underline;
+}
+
+img {
+  border-radius: 15px;
+}
