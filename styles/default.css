@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 body {
-  background-color: #004385;
-  color: white;
+  background-color: #352b1d;
+  color: #ffeedb;
   font-family: "Inter", sans-serif;
 }
 
 header {
-  background-color: #031a6b;
+  background-color: #917750;
   padding: 10px;
   border-radius: 20px;
   max-width: 1200px;
-  margin: 0 auto;
-  color: white;
+  margin: 10px auto;
+  color: #ffeedb;
 }
 
 h1,
@@ -20,30 +20,30 @@ h3,
 h4,
 h5,
 h6 {
-  color: #eaebed;
+  color: #ffeedb;
   font-family: "Playfair Display", serif;
 }
 
 main {
-  background-color: #03294e;
+  background-color: #917750;
   padding: 10px;
   border-radius: 20px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 10px auto;
   text-align: left;
 }
 
 footer {
-  background-color: #031a6b;
+  background-color: #917750;
   padding: 10px;
   border-radius: 20px;
   max-width: 1200px;
-  margin: 0 auto;
-  color: white;
+  margin: 10px auto;
+  color: #ffeedb;
 }
 
 a {
-  color: #76e5fc;
+  color: #ffeedb;
   text-decoration: none;
   font-weight: bold;
 }
@@ -53,7 +53,7 @@ p {
 }
 
 #firm {
-  color: white;
+  color: #ffeedb;
   font-size: 10px;
 }
 
