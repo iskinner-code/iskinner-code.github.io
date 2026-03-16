@@ -2,13 +2,130 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="images/chef.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Cooking as a Hobby | Ian B. Skinner</title>
     <script
       src="https://lint.page/kit/4d0fe3.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="hobbydefault.css" />
+    <style>
+      /*-Section Displays-*/
+      section {
+        display: none;
+      }
+
+      .active {
+        display: block;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: #1d3d5e;
+        color: #f4edea;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      /* - Navigation - */
+      a {
+        text-decoration: none;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2px;
+        align-items: center;
+      }
+
+      nav a {
+        color: #c9d1d9;
+        font-size: 15px;
+        padding: 5px 10px;
+        border-radius: 4px;
+      }
+
+      /*-Main-*/
+      main {
+        flex: 1;
+        padding: 2.5px 2px;
+        max-width: 960px;
+        margin: 0 auto;
+        font-size: 17px;
+      }
+
+      /*-Header & Footer-*/
+      header {
+        background-color: #12263a;
+        color: #f4edea;
+        padding: 25px 0 25px;
+        max-width: 100vw;
+        margin: 0;
+        font-size: 16px;
+      }
+
+      footer {
+        background-color: #12263a;
+        color: #f4edea;
+        text-align: center;
+        padding: 24px 32px;
+      }
+
+      /*-Misc.-*/
+      .card {
+        background-color: #3570ac;
+        padding: 10px 20px 10px;
+        border-radius: 0px;
+        max-width: 1200px;
+        margin: 10px auto;
+        text-align: left;
+      }
+
+      /*-Table Stuff-*/
+      table {
+        width: 90%;
+      }
+
+      th {
+        padding: 0.5px 1px;
+        text-align: left;
+      }
+
+      td {
+        padding: 0.45px 1px;
+      }
+
+      /*-Lists-*/
+      ol,
+      ul {
+        margin-bottom: 1px;
+        line-height: 1.5;
+        text-align: left;
+      }
+
+      /*-Figure-*/
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+
+      figcaption {
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -40,12 +157,25 @@
           cooking is "the process of preparing food for consumption, typically
           by applying heat to change its chemical composition, flavor, and
           texture, making it more digestible and safe to eat." While that is the
-          definition of cooking, is that what cooking truly is?
+          definition of cooking, is that what cooking truly is? Yes and no,
+          because cooking is different for everyone! For some people, cooking is
+          simply a way to prepare meals and provide nourishment for themselves
+          and others. For others, it is a creative activity that allows them to
+          experiment with flavors, ingredients, and techniques to create
+          something unique. Cooking can also be a cultural experience,
+          connecting people to traditions, family recipes, and shared meals that
+          bring people together.
         </p>
-        <figure></figure>
-        <p></p>
-
-        <div>
+        <figure>
+          <img
+            src="images/people2.jpg"
+            height="400"
+            width="600"
+            alt="a group of people cooking"
+          />
+          <figcaption>A group of people cooking together</figcaption>
+        </figure>
+        <div class="card">
           <h3>Is it cooking?</h3>
           <p>
             Look at the food listed and answer if that item would be considered
@@ -82,14 +212,28 @@
       <section id="who" aria-label="who can cook?">
         <h2>Who can cook?</h2>
         <p>
-          The age old question of "Who can Cook?" Well as Auguste Gusteau says
-          in the 2007 animatic film Ratatouille "Anyone can cook!" This
-          statement is true, as not eveyrone will become a great and amazing
-          chef, but talent can from anywhere and anyone, even where you don't
-          expect it.
+          The age-old question of “Who can cook?” has been asked for many years.
+          Well, as Auguste Gusteau says in the 2007 animated film Ratatouille,
+          “Anyone can cook!” This statement reflects the idea that cooking is
+          not limited to professional chefs or people who attend culinary
+          schools. While not everyone will become a great and famous chef, the
+          ability to cook is something that anyone can learn and develop over
+          time. Some people may discover a natural talent for cooking, while
+          others improve through practice, patience, and experimentation in the
+          kitchen.
         </p>
-        <figure></figure>
-        <div>
+        <figure>
+          <img
+            src="images/cook.jpg"
+            height="800"
+            width="600"
+            alt="Auguste Gusteau book 'Anyone can Cook' from Ratatouille"
+          />
+          <figcaption>
+            Auguste Gusteau book 'Anyone can Cook' from Ratatouille
+          </figcaption>
+        </figure>
+        <div class="card">
           <h3>About Me!</h3>
           <p>
             Hi! My name is Ian Skinner, I am a Computer Science student at UNC
@@ -126,15 +270,27 @@
       <section id="when" aria-label="When can we cook?">
         <h2>When can we cook?</h2>
         <p>
-          You can cook whenever you'd like, as long as you properly manage your
-          time and have the ingrediants you need. Some recipes will require time
-          and work before you apply ingredients and after it is done. It's all
-          about how much time the recipe needs and what ingrediants it requires.
-          Depending on those factors, it will either legthen or shorten how much
-          time to reciepe will take and when the best time will be to do it.
+          You can cook whenever you would like, as long as you properly manage
+          your time and have the ingredients you need. Cooking often requires
+          planning ahead, especially if a recipe includes several steps or
+          preparation before the actual cooking begins. Some recipes require
+          time and work before you even start applying the ingredients, such as
+          washing, cutting, or measuring them. Other recipes may require
+          additional time after the cooking process, such as letting food cool,
+          rest, or set before it can be served.
         </p>
-        <figure></figure>
-        <div>
+        <figure>
+          <img
+            src="images/tiramisu.jpg"
+            height="600"
+            width="600"
+            alt="Picture of a Tiramisu, a dish that takes a long time to be complete"
+          />
+          <figcaption>
+            Picture of a Tiramisu, a dish that takes a long time to be complete
+          </figcaption>
+        </figure>
+        <div class="card">
           <h3>Example Weekly Schedule</h3>
           <table>
             <thead>
@@ -167,12 +323,26 @@
       <section id="where" aria-label="where do we cook?">
         <h2>Where do we cook?</h2>
         <p>
-          You usually cook in a kitchen! It doesn't have to be this grand and
-          large space, a small and simple space will work just as fine. All you
-          need are the tools to make your food and a kitchen to make it in!
+          You usually cook in a kitchen! It doesn't have to be a grand or large
+          space; a small and simple area will work just as well. Many people
+          cook in kitchens of all different sizes, from spacious professional
+          kitchens to small apartments with limited counter space. What truly
+          matters is having a place where you can safely prepare and cook your
+          food. All you really need are the tools required to make your food and
+          a kitchen to make it in. Basic tools such as pots, pans, knives, and
+          utensils can go a long way in helping you prepare a wide variety of
+          meals.
         </p>
-        <figure></figure>
-        <div>
+        <figure>
+          <img
+            src="images/kitchen.jpg"
+            width="700"
+            height="400"
+            alt="A picture of my dorm room kitchen"
+          />
+          <figcaption>A picture of a dorm room kitchen in Elm Hall</figcaption>
+        </figure>
+        <div class="card">
           <h3>Best Places to Cook</h3>
           <ul>
             <li>Stove</li>
@@ -188,14 +358,31 @@
       <section id="how" aria-label="how do we cook?">
         <h2>How do we cook?</h2>
         <p>
-          To cook, you only really need two things. The recipe and the necessary
-          tools (i.e spatulas, pans, knives) to help you create it. Once we have
-          those things, all we need to do is follow the steps provided on the
-          recipe on how we create it and use our tools to assemble the food
-          being made.
+          To cook, you only really need two main things: the recipe and the
+          necessary tools (i.e., spatulas, pans, knives) to help you create it.
+          A recipe provides the instructions and ingredients needed to make a
+          specific dish, guiding you step by step through the cooking process.
+          It helps ensure that the right ingredients are used and that they are
+          prepared in the correct order so the final dish turns out the way it
+          is intended. Once we have those things, all we need to do is follow
+          the steps provided in the recipe on how to create the dish and use our
+          tools to assemble the food being made. The tools help with important
+          tasks such as mixing ingredients, cutting vegetables, stirring sauces,
+          or cooking food evenly in a pan. Each tool has a purpose that makes
+          the cooking process easier and more efficient.
         </p>
-        <figure></figure>
-        <div>
+        <figure>
+          <img
+            src="images/counter.jpg"
+            width="700"
+            height="400"
+            alt="Picture of a kitchen counter with tools and a recipe on it"
+          />
+          <figcaption>
+            Picture of a kitchen counter with tools and a recipe on it
+          </figcaption>
+        </figure>
+        <div class="card">
           <h3>How to prepare for cooking your dish</h3>
           <ol>
             <li>Find a recipe you want to cook!</li>
@@ -214,12 +401,27 @@
         <h2>Why do we cook?</h2>
         <p>
           People have many different reasons as to why they cook. Some do it for
-          fun, some do it professionally, some do it because they need to eat
-          food and don't want chinese takeout. Cooking can be as simple as a
-          microwavable meal to as elaborate as a thanksgiving dinner.
+          fun, some do it professionally, and some do it simply because they
+          need to eat and would rather not order Chinese takeout every night.
+          Cooking can serve many purposes in people's lives, whether it is a
+          hobby, a career, or just a daily responsibility. For some individuals,
+          cooking is an enjoyable activity that allows them to relax, be
+          creative, and experiment with different flavors and ingredients. For
+          others, cooking may be a professional skill used in restaurants,
+          bakeries, or other food-related careers. Cooking can also be as simple
+          as heating up a microwavable meal or as elaborate as preparing a large
+          holiday dinner like Thanksgiving.
         </p>
-        <figure></figure>
-        <div>
+        <figure>
+          <img
+            src="images/enjoy.jpg"
+            width="700"
+            height="400"
+            alt="Picture of two people having fun cooking"
+          />
+          <figcaption>Picture of two people having fun cooking</figcaption>
+        </figure>
+        <div class="card">
           <h3>Reasons why I cook</h3>
           <ul>
             <li>Food is a way I can express my creativity and kindness.</li>
@@ -239,19 +441,73 @@
       <section id="ai" aria-label="ai prompts">
         <h2>AI Prompts</h2>
         <p>This section contains prompts used in AI!</p>
-        <figure></figure>
-        <table>
-          <thead>
-            <tr>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="card">
+          <h3>ChatGPT Model was used to generate these prompts</h3>
+          <p>
+            Prompt: What is cooking? Well, as defined by the Merriam-Webster
+            dictionary, cooking is "the process of preparing food for
+            consumption, typically by applying heat to change its chemical
+            composition, flavor, and texture, making it more digestible and safe
+            to eat." While that is the definition of cooking, is that what
+            cooking truly is? Yes and no, because cooking is different for
+            everyone! <br />How do I make this longer?
+          </p>
+
+          <p>
+            <br />
+            Prompt: You can cook whenever you'd like, as long as you properly
+            manage your time and have the ingrediants you need. Some recipes
+            will require time and work before you apply ingredients and after it
+            is done. It's all about how much time the recipe needs and what
+            ingrediants it requires. Depending on those factors, it will either
+            legthen or shorten how much time to reciepe will take and when the
+            best time will be to do it. <br />How do I make this longer?
+          </p>
+
+          <p>
+            <br />
+            Prompt: What is cooking? Well, as defined by the Merriam-Webster
+            dictionary, cooking is "the process of preparing food for
+            consumption, typically by applying heat to change its chemical
+            composition, flavor, and texture, making it more digestible and safe
+            to eat." While that is the definition of cooking, is that what
+            cooking truly is? Yes and no, because cooking is different for
+            everyone! <br />How do I make this longer?
+          </p>
+
+          <p>
+            <br />
+            Prompt: You usually cook in a kitchen! It doesn't have to be this
+            grand and large space, a small and simple space will work just as
+            fine. All you need are the tools to make your food and a kitchen to
+            make it in! <br />How do I make this longer?
+          </p>
+
+          <p>
+            <br />
+            Prompt: To cook, you only really need two things. The recipe and the
+            necessary tools (i.e spatulas, pans, knives) to help you create it.
+            Once we have those things, all we need to do is follow the steps
+            provided on the recipe on how we create it and use our tools to
+            assemble the food being made. <br />How do I make this longer?
+          </p>
+
+          <p>
+            <br />
+            Prompt: People have many different reasons as to why they cook. Some
+            do it for fun, some do it professionally, some do it because they
+            need to eat food and don't want chinese takeout. Cooking can be as
+            simple as a microwavable meal to as elaborate as a thanksgiving
+            dinner. <br />How do I make this longer?
+          </p>
+
+          <p>
+            <br />
+            Prompt: (My html page code uploaded with prompt) <br />
+            I need the nav to make so only one section is shown when clicked.
+            Where "What" is the default page
+          </p>
+        </div>
       </section>
     </main>
 

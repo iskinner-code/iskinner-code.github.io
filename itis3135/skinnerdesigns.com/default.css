@@ -10,6 +10,14 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   background-color: #291f14;
   padding: 50px 0px 50px;
