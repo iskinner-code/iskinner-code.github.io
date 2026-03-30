@@ -2,12 +2,10 @@
 body {
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
+  min-height: 100vh;
   background-color: #7b5b3d;
-  overflow-x: hidden;
-  overflow-y: scroll;
   color: white;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", Georgia, "Times New Roman", Times, serif;
 }
 
 *,
@@ -23,16 +21,29 @@ h1 {
   padding: 50px 0px 50px;
   max-width: 100vw;
   color: #eaebed;
-  font-family: "Playfair Display", serif;
+  font-family: "Inter", Georgia, "Times New Roman", Times, serif;
   text-align: center;
+}
+
+h3 {
+  font-size: 25px;
+  font-family: "Inter", Georgia, "Times New Roman", Times, serif;
 }
 
 main {
   background-color: #443522;
   padding: 10px;
-  max-width: 100vw;
-  margin: 0 auto;
+  border-radius: 20px;
+  max-width: 900px;
+  margin: 10px auto;
   text-align: left;
+}
+
+ul {
+  padding: 25px;
+  list-style-type: square;
+  margin-left: 20px;
+  line-height: 1.5;
 }
 
 footer {
@@ -54,9 +65,16 @@ p {
   line-height: 1.5;
 }
 
-#firm {
-  color: white;
-  font-size: 10px;
+#contact {
+  background-color: #7b5b3d;
+  font-size: 15px;
+  text-align: left;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  max-width: 900px;
+  margin: 10px auto;
+  line-height: 2;
 }
 
 img {
