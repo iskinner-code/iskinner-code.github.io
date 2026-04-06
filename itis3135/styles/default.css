@@ -65,3 +65,9 @@ img {
 figcaption {
   text-align: center;
 }
+
+ol {
+  width: fit-content;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+}
