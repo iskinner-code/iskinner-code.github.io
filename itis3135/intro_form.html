@@ -3,7 +3,531 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Intro Form</title>
+    <title>Ian B. Skinner's Innovative Iguna ~ ITIS3135 |Intro Form</title>
+    <link rel="stylesheet" href="styles/default.css" />
+    <script
+      src="https://lint.page/kit/4d0fe3.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      form {
+        max-width: 800px;
+        margin: 20px auto;
+        text-align: left;
+      }
+
+      fieldset {
+        border: 2px solid #76e5fc; /* matches your link color */
+        border-radius: 10px;
+        padding: 15px;
+        margin: 15px 0;
+        background-color: #031a6b; /* same as header/footer */
+      }
+
+      legend {
+        color: #76e5fc;
+        font-weight: bold;
+        font-size: 1.1em;
+        padding: 0 10px;
+      }
+
+      label {
+        display: block;
+        margin: 12px 0;
+        color: #eaebed; /* matches headings */
+        font-weight: 500;
+      }
+
+      .img {
+        display: block;
+        max-width: 20%;
+        height: auto;
+        margin-top: 10px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="url"],
+      input[type="date"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #76e5fc;
+        border-radius: 5px;
+        font-family: "Inter", sans-serif;
+        font-size: 1em;
+        color: white;
+        background-color: #03294e; /* same as main */
+        box-sizing: border-box;
+      }
+
+      input:focus,
+      textarea:focus {
+        outline: none;
+        border-color: #76e5fc;
+        background-color: #043a6b;
+        box-shadow: 0 0 5px rgba(118, 229, 252, 0.5);
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 80px;
+      }
+
+      /* Courses Container */
+      #coursesContainer {
+        margin: 30px 0;
+      }
+
+      .courseItem {
+        background-color: #03294e;
+        border: 1px solid #76e5fc;
+        border-radius: 8px;
+        padding: 12px;
+        margin: 10px 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 10px;
+        justify-content: flex-end;
+      }
+
+      .courseItem label {
+        margin: 8px 0;
+        flex: 1 1 48%;
+        min-width: 200px;
+      }
+
+      .courseItem input {
+        margin-bottom: 10px;
+      }
+
+      /* Remove button */
+      .removeCourseBtn {
+        background-color: #ff6b6b;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+        margin-left: 100%;
+      }
+
+      .removeCourseBtn:hover {
+        background-color: #ff4444;
+      }
+
+      /* Buttons */
+      button[type="submit"],
+      button[type="reset"],
+      button[type="button"] {
+        background-color: #2b59c3; /* strong blue accent */
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        margin: 10px 5px;
+        border-radius: 8px;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 1em;
+        transition: all 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #76e5fc;
+        color: #031a6b;
+      }
+
+      #addCourseBtn {
+        display: block;
+        margin-top: 10px;
+      }
+
+      /* Responsive */
+      @media (max-width: 600px) {
+        fieldset {
+          padding: 12px;
+          margin: 12px 0;
+        }
+
+        button {
+          padding: 10px 15px;
+          margin: 8px 3px;
+        }
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div data-include="components/header.html"></div>
+    <script src="scripts/include.min.js"></script>
+    <main>
+      <div style="text-align: center">
+        <h2>Introduction Form</h2>
+        <h3>Please submit the form below.</h3>
+      </div>
+
+      <form id="intro-form">
+        <!-- Name -->
+        <fieldset>
+          <legend>Name</legend>
+          <label
+            >First Name*
+            <input
+              type="text"
+              id="first-name"
+              value="Ian"
+              placeholder="First name"
+              required
+            />
+          </label>
+          <label
+            >Middle Name or Initial (optional)
+            <input
+              type="text"
+              id="middle-name"
+              value="B."
+              placeholder="Middle name or initial"
+            />
+          </label>
+          <label
+            >Nickname / Preferred Name (optional)
+            <input type="text" id="nickname" value="" placeholder="e.g. Ian" />
+          </label>
+          <label
+            >Last Name*
+            <input
+              type="text"
+              id="last-name"
+              value="Skinner"
+              placeholder="Last name"
+              required
+            />
+          </label>
+        </fieldset>
+
+        <!-- Acknowledgment -->
+        <fieldset>
+          <legend>Acknowledgment</legend>
+          <label
+            >Acknowledgment Statement*
+            <textarea
+              id="ack-statement"
+              placeholder="I acknowledge that..."
+              required
+            >
+I acknowledge that the information on this page is accurate to the best of my knowledge.</textarea
+            >
+          </label>
+          <label
+            >Acknowledgment Date*
+            <input
+              type="text"
+              id="ack-date"
+              value="01/24/2026"
+              placeholder="MM/DD/YYYY"
+              required
+            />
+          </label>
+        </fieldset>
+
+        <!-- Mascot -->
+        <fieldset>
+          <legend>Mascot</legend>
+          <label
+            >Mascot Adjective*
+            <input
+              type="text"
+              id="mascot-adjective"
+              value="Innovative"
+              placeholder="e.g. Clever"
+              required
+            />
+          </label>
+          <label
+            >Mascot Animal*
+            <input
+              type="text"
+              id="mascot-animal"
+              value="Iguana"
+              placeholder="e.g. Penguin"
+              required
+            />
+          </label>
+          <label
+            >Divider*
+            <input
+              type="text"
+              id="divider"
+              value="|"
+              placeholder="e.g. ~ | □"
+              required
+            />
+          </label>
+        </fieldset>
+
+        <!-- Picture -->
+        <fieldset>
+          <legend>Picture</legend>
+          <label
+            >Upload Image (optional — defaults to your photo)
+            <input type="file" id="image-upload" accept="image/*" />
+          </label>
+          <label
+            >Picture Caption*
+            <input
+              type="text"
+              id="image-caption"
+              value="Me at Mt. Inari in Kyoto, Japan"
+              placeholder="Describe your photo"
+              required
+            />
+          </label>
+          <img
+            id="image-preview"
+            src="images/mt.inari.jpg"
+            alt="Preview"
+            width="147"
+            height="196"
+            style="margin-top: 10px; border-radius: 10px; object-fit: cover"
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Personal Statement</legend>
+          <label
+            >Personal Statement*
+            <textarea
+              id="personal-statement"
+              placeholder="Write a brief intro about yourself..."
+              required
+            >
+I'm a freshman here at Charlotte majoring in Computer Science with a concentration in Cybersecurity. I am very excited to learn about front-end systems this semester!</textarea
+            >
+          </label>
+        </fieldset>
+
+        <!-- Background Bullets -->
+        <fieldset>
+          <legend>Background</legend>
+          <label
+            >Personal Background*
+            <textarea
+              id="personal-background"
+              placeholder="Your personal background..."
+              required
+            >
+I was born in New Jersey but moved to Massachusetts when I was 5 years old.</textarea
+            >
+          </label>
+          <label
+            >Professional Background*
+            <textarea
+              id="professional-background"
+              placeholder="Your professional background..."
+              required
+            >
+I've worked as a Camp Counselor for a theatre camp, a lifeguard for a swim school, and I will be an OC for the school this upcoming summer! I also interned at UMLARC. A UMass Lowell and DoD cybersecurity upstart created to help the Commonwealth of Massachusetts and provide UMass Lowell cybersecurity students with real world experience.</textarea
+            >
+          </label>
+          <label
+            >Academic Background*
+            <textarea
+              id="academic-background"
+              placeholder="Your academic background..."
+              required
+            >
+I am currently pursuing a B.S. in Computer Science with a concentration in Cybersecurity.</textarea
+            >
+          </label>
+          <label
+            >Background in this Subject*
+            <textarea
+              id="subject-background"
+              placeholder="Your background in web/this subject..."
+              required
+            >
+I don't have a lot of experience in front end development, but I am excited to learn more!</textarea
+            >
+          </label>
+          <label
+            >Primary Work Computer*
+            <input
+              type="text"
+              id="primary-computer"
+              value="A owns a Dell Laptop recommended by the school and it runs on Windows. I keep it on me wherever I go!"
+              required
+            />
+          </label>
+          <label
+            >Backup Work Computer & Location Plan*
+            <input
+              type="text"
+              id="backup-computer"
+              value="A PC I built a few years ago and it is currently being kept in my down and also runs on Windows."
+              placeholder="Backup computer and where you'll use it"
+              required
+            />
+          </label>
+        </fieldset>
+
+        <!-- Courses -->
+        <fieldset>
+          <legend>Courses I'm Taking & Why</legend>
+          <div id="courses-container"></div>
+          <button type="button" id="add-course-btn">+ Add Course</button>
+        </fieldset>
+
+        <!-- Quote -->
+        <fieldset>
+          <legend>Quote</legend>
+          <label
+            >Quote*
+            <textarea id="quote" placeholder="Your favorite quote..." required>
+"Darkness cannot drive out darkness; only light can do that. Hate cannot drive out hate; only love can do that."</textarea
+            >
+          </label>
+          <label
+            >Quote Author*
+            <input
+              type="text"
+              id="quote-author"
+              value="MLK Jr."
+              placeholder="Who said it?"
+              required
+            />
+          </label>
+        </fieldset>
+
+        <!-- Optional Items -->
+        <fieldset>
+          <legend>Optional Items</legend>
+          <label
+            >Funny / Interesting thing to remember you by (optional)
+            <input
+              type="text"
+              id="funny-thing"
+              placeholder="Something funny or interesting about you"
+            />
+          </label>
+          <label
+            >Something I'd like to share (optional)
+            <textarea
+              id="share-item"
+              placeholder="Anything else you'd like visitors to know..."
+            ></textarea>
+          </label>
+        </fieldset>
+
+        <!-- Links -->
+        <fieldset>
+          <legend>Links (5 required)</legend>
+
+          <label for="link-name-1">Link 1 Name*</label>
+          <input
+            type="text"
+            id="link-name-1"
+            value="GitHub"
+            placeholder="Link label"
+            required
+          />
+
+          <label for="link-href-1">Link 1 URL*</label>
+          <input
+            type="url"
+            id="link-href-1"
+            value="https://github.com/iskinner-code"
+            placeholder="https://..."
+            required
+          />
+
+          <label for="link-name-2">Link 2 Name*</label>
+          <input
+            type="text"
+            id="link-name-2"
+            value="GitHub.io"
+            placeholder="Link label"
+            required
+          />
+
+          <label for="link-href-2">Link 2 URL*</label>
+          <input
+            type="url"
+            id="link-href-2"
+            value="https://iskinner-code.github.io/"
+            placeholder="https://..."
+            required
+          />
+
+          <label for="link-name-3">Link 3 Name*</label>
+          <input
+            type="text"
+            id="link-name-3"
+            value="CLT"
+            placeholder="Link label"
+            required
+          />
+
+          <label for="link-href-3">Link 3 URL*</label>
+          <input
+            type="url"
+            id="link-href-3"
+            value="https://webpages.charlotte.edu/iskinner/"
+            placeholder="https://..."
+            required
+          />
+
+          <label for="link-name-4">Link 4 Name*</label>
+          <input
+            type="text"
+            id="link-name-4"
+            value="freeCodeCamp"
+            placeholder="Link label"
+            required
+          />
+
+          <label for="link-href-4">Link 4 URL*</label>
+          <input
+            type="url"
+            id="link-href-4"
+            value="https://www.freecodecamp.org/iskinner"
+            placeholder="https://..."
+            required
+          />
+
+          <label for="link-name-5">Link 5 Name*</label>
+          <input
+            type="text"
+            id="link-name-5"
+            value="LinkedIn"
+            placeholder="Link label"
+            required
+          />
+
+          <label for="link-href-5">Link 5 URL*</label>
+          <input
+            type="url"
+            id="link-href-5"
+            value="https://www.linkedin.com/in/i-skinner/"
+            placeholder="https://..."
+            required
+          />
+        </fieldset>
+
+        <div class="buttons">
+          <button type="submit">Submit</button>
+          <button type="button" id="reset-btn">Reset</button>
+          <button type="button" id="clear-btn">Clear</button>
+          <button type="button" id="generate-json-btn">Generate JSON</button>
+          <button type="button" id="generate-html-btn">Generate HTML</button>
+        </div>
+      </form>
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/include.min.js"></script>
+    <script src="scripts/intro.js"></script>
+    <script src="scripts/jsongenerate.js"></script>
+    <script src="scripts/htmlgenerate.js"></script>
+  </body>
 </html>
