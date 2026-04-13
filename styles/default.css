@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 body {
   background-color: #352b1d;
-  color: #f4edea;
+  color: black;
   font-family: "Inter", sans-serif;
   font-weight: 450;
 }
@@ -12,7 +12,7 @@ header {
   border-radius: 20px;
   max-width: 1200px;
   margin: 10px auto;
-  color: #f4edea;
+  color: black;
 }
 
 h1,
@@ -21,7 +21,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #f4edea;
+  color: black;
   font-family: "Playfair Display", serif;
 }
 
@@ -40,11 +40,11 @@ footer {
   border-radius: 20px;
   max-width: 1200px;
   margin: 10px auto;
-  color: #f4edea;
+  color: black;
 }
 
 a {
-  color: #f4edea;
+  color: black;
   text-decoration: none;
   font-weight: bold;
 }
@@ -54,7 +54,7 @@ p {
 }
 
 #firm {
-  color: #f4edea;
+  color: black;
   font-size: 10px;
 }
 
